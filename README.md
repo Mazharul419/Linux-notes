@@ -1,5 +1,7 @@
 # Linux-notes
 
+### File Management
+
 mkdir makes directories
 
 rmdir - removes directories
@@ -27,6 +29,16 @@ cat - prints contents of existing file
 - also can overwrite (>) or append (>>)  contents to a new or existing file
 
 cp - copies a file or directory
+
+
+### User Management
+
+sudo - super user do - applies special priveleges to run commands
+
+sudo useradd newuser
+sudo passwd newuser
+
+adds new user
 
 
 
