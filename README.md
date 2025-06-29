@@ -42,6 +42,30 @@ cp - copies a file or directory
 
 3- rwx - Other rights
 
+chmod - modifies permissions for files
+
+e.g., chmmod u+x, g+r, o-w [filename].file  - users: adds execute permission, group: adds read permission, others: removes write permission for filename
+
+chmod ug=rw, o=r example.txt - sets permission for users and groups to read and write only, sets other permissions to read only
+
+chown - modifies owner of a file (req. sudo)
+
+chgrp - modifies group of a file (req. sudo)
+
+e.g., 
+
+sudo chown newuser example.txt - changes owner of example.txt file to newuser
+sudo chgrp admin example.txt - changes group of example.txt file to admin group
+
+sudo chown newuser:admin example.txt - does both above commands
+
+
+sudo -R newuser:admin example_directory - changes ownership of directory and contents
+
+
+
+owner and group info found using ls -l command
+
 ### User Management
 
 whoami - specifies which user you are logged in as
